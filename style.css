@@ -1,0 +1,124 @@
+body {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: f1f5f8;
+}
+h1 {
+    margin-top: 98px;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.25rem;
+}
+h4 {
+    font-size: 0.97rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.25rem;
+}
+#job {
+    color: #49a6e9;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+p {
+    color: #76819b;
+    font-size: 15px;
+}
+.underline {
+    height: 0.25rem;
+    width: 5rem;
+    background: #49a6e9;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: 65px;
+}
+.box {
+    margin: auto; 
+    width: 70vw;
+    max-width: 1170px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s linear;
+    text-align: center;
+}
+.box:hover {
+    box-shadow:  0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.img-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+#person-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+}
+.img-container::after {
+    font-weight: 900;
+    content: '\"';
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    transform: translateY(25%);
+    background: hsl(205, 78%, 60%);
+    color: white;
+}
+.img-container::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: hsl(205, 78%, 60%);
+    position: absolute;
+    top: -0.25rem;
+    right: -0.5rem;
+    border-radius: 90%;
+}
+.prev, .next {
+    cursor: pointer;
+    padding: 10px;
+    color:  hsl(205, 86%, 81%);
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.3s linear;
+}
+.next {
+    position: static;
+    right: 0;
+}
+.prev:hover, .next:hover {
+    color: #49a6e9;
+}
+.btn {
+    margin-top: 10px;
+    padding: 4px;
+    border-radius: 0.5rem;
+    width: 90px;
+    border-color: #49a6e9;
+    color: #49a6e9;
+    background: hsl(205, 100%, 96%);
+    transition: all 0.3s linear;
+}
+.btn:hover {
+    color: black;
+    background: #49a6e9;;
+}
+
+
+  
